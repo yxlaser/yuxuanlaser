@@ -5,70 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Yuxuan Laser</title>
     <style>
-        * {margin: 0;padding: 0;box-sizing: border-box;font-family: Arial,sans-serif;}
+        * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
         body {background:#f5f7fa;}
         nav {background:#111;padding:18px 0;position:fixed;top:0;width:100%;z-index:100;}
-        nav ul {display:flex;justify-content:center;gap:35px;list-style:none;}
+        nav ul {display:flex;justify-content:center;gap:35px;list-style:none;flex-wrap:wrap;}
         nav a {color:#fff;text-decoration:none;font-size:16px;}
         nav a:hover {color:#00a8ff;}
-        .title {text-align:center;padding:100px 0 40px;font-size:32px;color:#222;}
-        .pro-wrap {max-width:1300px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(5,1fr);gap:25px;padding-bottom:60px;}
-        .pro-card {background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px #eee;}
-        .pro-card img {width:100%;height:220px;object-fit:cover;display:block;}
-        .pro-text {padding:15px;text-align:center;}
-        .pro-text h3 {font-size:16px;margin-bottom:8px;color:#222;}
-        .pro-text p {font-size:13px;color:#666;line-height:1.5;}
-        @media (max-width:1200px){.pro-wrap{grid-template-columns:repeat(3,1fr);}}
-        @media (max-width:768px){.pro-wrap{grid-template-columns:repeat(2,1fr);}}
+        .title {text-align:center;padding:100px 0 30px;font-size:28px;color:#222;}
+        .product-box {max-width:1300px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;padding-bottom:60px;}
+        .item {background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px #eee;transition:0.3s;}
+        .item:hover {transform:translateY(-5px);}
+        .item img {width:100%;height:200px;object-fit:cover;display:block;}
+        .info {padding:15px;text-align:center;}
+        .info h3 {font-size:15px;margin-bottom:8px;color:#222;line-height:1.4;}
+        .info p {font-size:13px;color:#666;line-height:1.4;}
+        @media (max-width:1200px){.product-box{grid-template-columns:repeat(3,1fr);}}
+        @media (max-width:768px){.product-box{grid-template-columns:repeat(2,1fr);}}
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="applications.html">Applications</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <h2 class="title">Our Laser Machines</h2>
-    <div class="pro-wrap">
-        <div class="pro-card">
-            <img src="p1.jpg" alt="CCD Visual Positioning Laser Machine">
-            <div class="pro-text">
-                <h3>CCD Visual Positioning Laser Machine</h3>
-                <p>High precision cutting for fabric, label, trademark</p>
-            </div>
-        </div>
-        <div class="pro-card">
-            <img src="p2.jpg" alt="3D Dynamic Laser Engraver">
-            <div class="pro-text">
-                <h3>3D Dynamic Laser Engraver</h3>
-                <p>Suitable for jeans washing effect carving</p>
-            </div>
-        </div>
-        <div class="pro-card">
-            <img src="p3.jpg" alt="CO2 Laser Cutting Machine">
-            <div class="pro-text">
-                <h3>CO2 Laser Cutting Machine</h3>
-                <p>Multi-purpose non-metal cutting equipment</p>
-            </div>
-        </div>
-        <div class="pro-card">
-            <img src="p4.jpg" alt="Ribbon Automatic Cutter">
-            <div class="pro-text">
-                <h3>Ribbon Automatic Cutter</h3>
-                <p>High speed satin ribbon cutting machine</p>
-            </div>
-        </div>
-        <div class="pro-card">
-            <img src="p5.jpg" alt="Vibration Knife Cutting Machine">
-            <div class="pro-text">
-                <h3>Vibration Knife Cutting Machine</h3>
-                <p>Soft material cutting easy operation</p>
-            </div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="applications.html">Applications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h2 class="title">Our Laser Products</h2>
+
+<div class="product-box">
+    <div class="item">
+        <img src="p1.jpg" alt="CCD Visual Positioning Laser Machine">
+        <div class="info">
+            <h3>CCD Visual Positioning Laser Machine</h3>
+            <p>High precision cutting for fabric, label, trademark</p>
         </div>
     </div>
+
+    <div class="item">
+        <img src="p2.jpg" alt="Desktop Laser Marking Machine">
+        <div class="info">
+            <h3>Desktop Laser Marking Machine</h3>
+            <p>Suitable for laser marking in various industries</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="p3.jpg" alt="Metal Laser Cutting Machine">
+        <div class="info">
+            <h3>Metal Laser Cutting Machine</h3>
+            <p>For stainless steel, carbon steel, aluminum, copper sheet cutting</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="p4.jpg" alt="Laser Welding Machine">
+        <div class="info">
+            <h3>Laser Welding Machine</h3>
+            <p>For hardware, bathroom, battery, eyewear industries</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="p5.jpg" alt="Vibration Knife Cutting Machine">
+        <div class="info">
+            <h3>Vibration Knife Cutting Machine</h3>
+            <p>Soft material cutting, easy operation</p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
