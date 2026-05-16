@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applications | YX-LASER</title>
+    <title>Applications - Yuxuan Laser</title>
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
-        body { line-height:1.6; color:#333; }
-        header { background:#000; color:#fff; padding:1rem 5%; display:flex; justify-content:space-between; align-items:center; }
-        .logo { font-size:1.5rem; font-weight:bold; }
-        nav a { color:#fff; margin:0 1rem; text-decoration:none; }
-        .section { padding:3rem 5%; }
-        .section h2 { font-size:2rem; margin-bottom:2rem; text-align:center; }
-        .app-list { max-width:800px; margin:0 auto; }
-        .app-list li { margin:1rem 0; font-size:1.1rem; }
-        footer { background:#000; color:#fff; text-align:center; padding:2rem 5%; }
+        * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+        nav {background:#111;padding:18px 0;}
+        nav ul {display:flex;justify-content:center;gap:35px;list-style:none;}
+        nav a {color:#fff;text-decoration:none;font-size:16px;}
+        nav a:hover {color:#00a8ff;}
+        .app-title {text-align:center;padding:50px 0;font-size:30px;color:#222;}
+        .app-banner {max-width:1200px;margin:0 auto;padding:0 20px;}
+        .app-banner img {width:100%;border-radius:10px;box-shadow:0 3px 15px #ddd;}
+        .app-list {max-width:1200px;margin:50px auto;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-bottom:60px;}
+        .app-item {background:#f8f9fa;padding:20px;border-radius:8px;text-align:center;}
+        .app-item h4 {margin-bottom:10px;color:#111;}
+        .app-item p {color:#666;font-size:14px;}
+        @media (max-width:900px){.app-list{grid-template-columns:repeat(2,1fr);}}
+        @media (max-width:500px){.app-list{grid-template-columns:1fr;}}
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">YX-LASER</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About Us</a>
-            <a href="applications.html">Applications</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <section class="section">
-        <h2>Application Industries</h2>
-        <ul class="app-list">
-            <li><strong>Signage & Advertising</strong> – Acrylic cutting, wood engraving, metal letters, logo making</li>
-            <li><strong>Textile & Garment</strong> – Lace cutting, embroidery trimming, denim washing, fabric engraving</li>
-            <li><strong>Metal Fabrication</strong> – Sheet cutting, pipe processing, metal marking, hardware making</li>
-            <li><strong>Packaging & Printing</strong> – Die cutting, QR code marking, paper processing, label making</li>
-            <li><strong>Leather & Footwear</strong> – Pattern cutting, leather engraving, shoe material trimming</li>
-            <li><strong>Automotive</strong> – Interior cutting, parts marking, pipe cutting</li>
-            <li><strong>Furniture & Decoration</strong> – Wood carving, acrylic cutting, fabric cutting</li>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <footer>
-        <p>Taizhou Yuxuan Photoelectric Technology Co., Ltd.</p>
-        <p>Email: yuxuan_sales02@yx-laser.com</p>
-    </footer>
+    <h2 class="app-title">Industry Application Fields</h2>
+    <div class="app-banner">
+        <!-- 行业应用合集图 命名：industry.jpg -->
+        <img src="industry.jpg" alt="Laser Machine All Industries Application">
+    </div>
+
+    <div class="app-list">
+        <div class="app-item">
+            <h4>Textile & Garment</h4>
+            <p>Fabric cutting, logo engraving, jeans washing effect</p>
+        </div>
+        <div class="app-item">
+            <h4>Label & Trademark</h4>
+            <p>Woven label, printed label high precision cutting</p>
+        </div>
+        <div class="app-item">
+            <h4>Leather Goods</h4>
+            <p>Shoes, bags, leather carving and cutting</p>
+        </div>
+        <div class="app-item">
+            <h4>Advertising Crafts</h4>
+            <p>Acrylic, wood, paper board craft processing</p>
+        </div>
+    </div>
 </body>
 </html>
