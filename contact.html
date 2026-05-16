@@ -6,17 +6,21 @@
     <title>Contact Us - Yuxuan Laser</title>
     <style>
         * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-        nav {background:#111;padding:18px 0;}
-        nav ul {display:flex;justify-content:center;gap:35px;list-style:none;}
+        nav {background:#111;padding:18px 0;position:fixed;top:0;width:100%;z-index:100;}
+        nav ul {display:flex;justify-content:center;gap:35px;list-style:none;flex-wrap:wrap;}
         nav a {color:#fff;text-decoration:none;font-size:16px;}
         nav a:hover {color:#00a8ff;}
-        body {background-color:#f0f5fa;}
-        .contact-box {max-width:700px;margin:80px auto;background:#fff;padding:50px;border-radius:12px;box-shadow:0 4px 20px #e0e7f1;}
+        body {background-color:#f0f5fa;padding-top:80px;}
+        .contact-box {max-width:700px;margin:0 auto;background:#fff;padding:50px;border-radius:12px;box-shadow:0 4px 20px #e0e7f1;}
         .contact-box h2 {text-align:center;font-size:28px;color:#222;margin-bottom:35px;}
-        .info-line {margin:18px 0;font-size:16px;color:#444;line-height:1.7;}
+        .info-line {margin:18px 0;font-size:16px;color:#444;line-height:1.7;word-break:break-all;}
         .btn-box {text-align:center;margin-top:40px;}
         .contact-btn {display:inline-block;padding:14px 40px;background:#0072ce;color:#fff;text-decoration:none;border-radius:6px;font-size:16px;transition:0.3s;}
         .contact-btn:hover {background:#0059a3;}
+        @media (max-width:768px){
+            .contact-box {margin:0 20px;padding:30px;}
+            nav ul {gap:20px;}
+        }
     </style>
 </head>
 <body>
@@ -33,10 +37,11 @@
     <div class="contact-box">
         <h2>Get In Touch</h2>
         <div class="info-line"><strong>Company:</strong> Taizhou Yuxuan Photoelectric Technology Co.,Ltd</div>
-        <div class="info-line"><strong>Email:</strong> yuxuan_sales02@yx-laser.com</div>
-        <div class="info-line"><strong>WhatsApp:</strong> +86 000000000</div>
+        <div class="info-line"><strong>Email:</strong> yourcompany@mail.com</div>
+        <div class="info-line"><strong>WhatsApp:</strong> +86 13800000000</div>
+        <div class="info-line"><strong>WeChat:</strong> YuXuan-15857618565</div>
         <div class="info-line"><strong>Address:</strong> Taizhou City, Zhejiang Province, China</div>
-        <div class="info-line"><strong>Business Scope:</strong> All types of laser processing equipment. Please contact us via email for details. Kindly attach your specific application scenarios, so we can offer you the fastest and most accurate service.</div>
+        <div class="info-line"><strong>Business Scope:</strong> All kinds of laser cutting & engraving machines</div>
 
         <div class="btn-box">
             <a href="mailto:yourcompany@mail.com" class="contact-btn">Send Inquiry Now</a>
