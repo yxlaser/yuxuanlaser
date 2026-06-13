@@ -17,6 +17,9 @@
         .btn-box {text-align:center;margin-top:40px;}
         .contact-btn {display:inline-block;padding:14px 40px;background:#0072ce;color:#fff;text-decoration:none;border-radius:6px;font-size:16px;transition:0.3s;}
         .contact-btn:hover {background:#0059a3;}
+        /* 新增：WhatsApp 按钮样式，和整体风格统一 */
+        .whatsapp-btn {display:inline-block;padding:14px 40px;background:#25D366;color:#fff;text-decoration:none;border-radius:6px;font-size:16px;transition:0.3s;margin-top:10px;}
+        .whatsapp-btn:hover {background:#1da851;}
         @media (max-width:768px){
             .contact-box {margin:0 20px;padding:30px;}
             nav ul {gap:20px;}
@@ -38,30 +41,28 @@
         <h2>Get In Touch</h2>
         <div class="info-line"><strong>Company:</strong> Taizhou Yuxuan Photoelectric Technology Co.,Ltd</div>
         <div class="info-line"><strong>Email:</strong> yuxuan_sales02@yx-laser.com</div>
-       <!-- WhatsApp 一键聊天按钮 -->
-<div style="margin: 20px 0;">
-  <a href="https://wa.me/8619720541309" 
-     target="_blank" 
-     style="display: inline-block;
-            padding: 12px 24px;
-            background-color: #25D366; /* WhatsApp 绿色 */
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 16px;">
-    📱 Chat with us on WhatsApp
-  </a>
-  <p style="margin-top: 10px; font-size: 14px; color: #666;">
-    Or add us manually: <strong>+86 19720541309</strong>
-  </p>
-</div>
+        
+        <!-- 修复后的 WhatsApp 一键聊天按钮，和网站风格统一 -->
+        <div class="info-line">
+            <strong>WhatsApp:</strong>
+            <br>
+            <a href="https://wa.me/8619720541309?text=Hi%20Yuxuan%20Laser%2C%20I%20am%20interested%20in%20your%20laser%20cutting%20machine." 
+               target="_blank" 
+               class="whatsapp-btn">
+                📱 Chat with us on WhatsApp
+            </a>
+            <p style="margin-top:10px;font-size:14px;color:#666;">
+                Or add us manually: <strong>+86 19720541309</strong>
+            </p>
+        </div>
+
         <div class="info-line"><strong>WeChat:</strong> YuXuan-15857618565</div>
         <div class="info-line"><strong>Address:</strong> Taizhou City, Zhejiang Province, China</div>
         <div class="info-line"><strong>Business Scope:</strong> All kinds of laser cutting & engraving machines.For more information, please contact us via email and specify your actual application scenarios, including processing materials, working size, quantity and other requirements, so that we can provide you with efficient and accurate services. We also welcome distributors worldwide to discuss cooperation.</div>
 
+        <!-- 修复：邮箱按钮改成你的真实邮箱 -->
         <div class="btn-box">
-            <a href="mailto:yourcompany@mail.com" class="contact-btn">Send Inquiry Now</a>
+            <a href="mailto:yuxuan_sales02@yx-laser.com" class="contact-btn">Send Inquiry Now</a>
         </div>
     </div>
 </body>
